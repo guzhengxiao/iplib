@@ -1,0 +1,13 @@
+application:start(iplib).
+
+iplib:search("202.96.209.5").
+iplib:search({202, 96, 209, 5}).
+iplib:search(629044839).
+
+return:   {ok,  Info#iplib_ip_info}  |  null
+
+-record(iplib_ip_info, {start, stop, address, country, descr, location, netname, network, province}).
+
+
+priv/ip.db变动后执行
+iplib:reload().

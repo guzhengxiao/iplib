@@ -1,0 +1,12 @@
+{application, iplib,
+ [
+  {description, ""},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { iplib_app, []}},
+  {env, []}
+ ]}.
